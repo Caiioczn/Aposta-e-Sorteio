@@ -1,3 +1,8 @@
+// Script recebe uma aposta do usuario, ele escolhendo uma quantidade de numeros de 1 a 20
+// Em seguida recebe os numeros que o usuario deseja aposta
+// Com a funçao rand() faz um sorteio de 20 numeros
+// Apos o sorteio compara os numeros apostados com os numero sorteados e exibe o resultado
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
@@ -10,9 +15,6 @@ void ler_aposta (int *aposta,int n)
         printf("Aposta %d: ",i+1);
         scanf("%d",&aposta[i]);
     }
-    
-
-
 }
 
 
@@ -38,8 +40,6 @@ void sorteia_valores (int *sorteio,int n)
             i++;
         }
         
-        
-
     } while (i<20);
 
 }
@@ -63,10 +63,6 @@ int compara_aposta (int *aposta, int *sorteio,int *val_certos,int na, int ns)
         
     }
     return (cont);
-    
-
-
-
 }
 
 
